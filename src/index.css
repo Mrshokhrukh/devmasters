@@ -5,7 +5,7 @@
 }
 
 :root {
-  --main_color: #0d1117;
+  --main: #0d1117;
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
@@ -51,13 +51,28 @@
 
 body,
 html {
-  /* background: var(--main_color); */
   background: white;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: #212529;
 }
-
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #212529;
+}
 .container {
   max-width: 1400px;
   margin: auto;
+}
+@media (max-width: 1400px) {
+  .container {
+    max-width: 93%;
+  }
+}
+@media (max-width: 512px) {
+  .container {
+    max-width: 97%;
+  }
 }
