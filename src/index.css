@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Mooli&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@200;300;400;500;600;700;800;900&display=swap');
 * {
   padding: 0;
   margin: 0;
@@ -6,6 +8,7 @@
 
 :root {
   --main: #0d1117;
+  --home: #f1f4ff;
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
@@ -47,6 +50,28 @@
   --bs-white: rgb(255, 255, 255);
   --bs-black: rgb(0, 0, 0);
   --bs-body: rgb(33, 37, 41);
+  /* --------------------------------------------------- */
+  --gray-2: #606877;
+  --gray-1: #23262d;
+  --primary-1: #a165fd;
+  --secondary-1: #f7f2ff;
+  --black: black;
+  --white: white;
+  --secondary-3: #ffe9e9;
+  --primary-7: #12d86e;
+  --primary-2: #f855c5;
+  --primary-3: #f85b5b;
+  --primary-4: #08d7d8;
+  --primary-5: #4064f6;
+  --primary-6: #fbc418;
+  --secondary-6: #fffae9;
+  --secondary-2: #fff3fb;
+  --secondary-5: #f1f4ff;
+  --primary-8: #2498da;
+  --secondary-8: #d8f1ff;
+  --secondary-4: #efffff;
+  --secondary-7: #f3fff9;
+  --gray-3: #c6c2c2;
 }
 
 body,
