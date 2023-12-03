@@ -57,7 +57,6 @@ const Home = () => {
               />
             </Player>
           </div>
-
           <Wrapper
             text={"tezkor ⚡️"}
             color={"violent"}

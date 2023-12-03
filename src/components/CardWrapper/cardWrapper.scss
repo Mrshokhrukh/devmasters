@@ -1,0 +1,92 @@
+[class*='designed_card'] {
+    width: 100%;
+    text-align: center;
+    border-top-style: solid;
+    border-top-width: 7px;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+
+    .card_icon {
+        width: 75px;
+        height: 75px;
+        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        font-size: 38px;
+        color: white;
+    }
+
+    .card_title {
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-family: Prompt, sans-serif;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 1.2em;
+    }
+
+    .card_description {
+        color: var(--gray-2);
+        font-family: Poppins;
+        line-height: 19px;
+        font-size: 14px;
+    }
+}
+
+@media(max-width:768px) {
+    [class*='designed_card'] {
+        padding-left: 20px;
+        padding-right: 20px;
+
+        .card_icon {
+            width: 55px;
+            height: 55px;
+            font-size: 26px;
+        }
+        .card_title{
+            font-size: 18px;
+            line-height: 20px;
+        }
+        .card_description{
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+}
+
+.designed_card_first {
+    border-color: var(--bs-yellow);
+    background-color: rgba(255, 187, 0, 0.089);
+
+    .card_icon {
+        background-color: var(--bs-yellow);
+    }
+}
+
+.designed_card_second {
+    border-color: var(--primary-0);
+    background-color: rgba(255, 17, 0, 0.068);
+
+    .card_icon {
+        background-color: var(--primary-0);
+    }
+}
+
+.designed_card_third {
+    border-color: var(--primary-7);
+    background-color: rgba(0, 255, 179, 0.089);
+
+    .card_icon {
+        background-color: var(--primary-7);
+    }
+}

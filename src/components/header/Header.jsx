@@ -68,19 +68,16 @@ const Header = () => {
         </div>
         <div className="nav_links">
           <NavLink to="/" className="nav_link">
-            Home
+            Asosiy
           </NavLink>
           <NavLink to="/" className="nav_link">
-            About
+            Hizmatlar
           </NavLink>
           <NavLink to="/" className="nav_link">
-            Services
+            Narxlar
           </NavLink>
           <NavLink to="/" className="nav_link">
-            Price
-          </NavLink>
-          <NavLink to="/" className="nav_link">
-            Works
+            ishlarimiz
           </NavLink>
         </div>
         <div className="nav_right">
