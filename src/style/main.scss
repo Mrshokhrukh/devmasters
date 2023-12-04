@@ -9,3 +9,13 @@
     font-weight: 600;
     cursor: pointer;
 }
+
+.ads_lenting {
+    margin-top: 100px;
+}
+
+@media(max-width:768px) {
+    .ads_lenting {
+        margin-top: 65px;
+    }
+}

@@ -1,7 +1,6 @@
 .advertising_fss {
-    position: relative;
-    top: 100px;
     width: 100%;
+    
     display: grid;
     grid-template-columns: .75fr 1fr;
     gap: 35px;
@@ -54,6 +53,100 @@
                 background-color: white;
                 border: 1px solid var(--primary-8);
                 color: var(--primary-8);
+            }
+        }
+    }
+
+    @media(max-width:1400px) {
+        .adverting_right {
+            h1 {
+                font-size: 52px;
+                line-height: 55px;
+            }
+        }
+    }
+
+    @media(max-width:1230px) {
+        .adverting_right {
+            h1 {
+                font-size: 45px;
+                line-height: 48px;
+            }
+        }
+    }
+
+    @media(max-width:1081px) {
+        .adverting_right {
+
+            h1 {
+                font-size: 35px;
+                line-height: 35px;
+            }
+
+            p {
+                font-size: 16px;
+                width: 100%;
+            }
+        }
+    }
+
+    @media(max-width:992px) {
+        & {
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 20px;
+
+            .adverting_right {
+                text-align: center;
+                align-items: center;
+                padding: 25px 30px;
+
+                .adver_btns {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+
+    @media(max-width:512px) {
+        & {
+            .adverting_right {
+                padding: 15px;
+
+                h1 {
+                    font-size: 28px;
+                    line-height: 30px;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+
+                .adver_btns .btn {
+                    width: 90px;
+                    height: 32px;
+                    font-size: 12px;
+                    padding: 0;
+                }
+            }
+        }
+    }
+
+    @media(max-width:380px) {
+        & {
+            .adverting_right {
+                padding: 10px;
+
+                h1 {
+                    font-size: 24px;
+                    line-height: 26px;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+
+
             }
         }
     }
