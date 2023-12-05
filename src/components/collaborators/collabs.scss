@@ -1,0 +1,55 @@
+.swiper_infitine_wraps {
+    width: 100%;
+    margin-top: 70px;
+    padding: 20px 0;
+    background-color: white;
+    display: flex;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #e5f1ff;
+
+    img {
+        width: 70px;
+    }
+
+    div {
+        display: flex;
+        animation: loop 20s linear infinite;
+
+        img {
+            margin: 0 90px;
+            transition: 0.3s;
+
+            &:hover {
+                transform: scale(1.1);
+                cursor: pointer;
+                animation-play-state: paused;
+            }
+        }
+
+        @media(max-width:768px) {
+            img {
+                width: 50px;
+                margin: 0 60px;
+            }
+        }
+
+        @media(max-width:512px) {
+            img {
+                width: 35px;
+                margin: 0 40px;
+            }
+        }
+
+    }
+
+    @keyframes loop {
+        0% {
+            transform: translateX(0%);
+        }
+
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+}

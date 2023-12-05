@@ -1,9 +1,28 @@
-import React from "react";
 import "./collabs.scss";
+import c from "../../assets/checkmark.png";
 const Collabs = () => {
   return (
-    <div>
-      <h2>asdsa</h2>
+    <div className="container">
+      <div className="swiper_infitine_wraps">
+        <div>
+          <img src={c} alt="" />
+          <img src={c} alt="" />
+          <img src={c} alt="" />
+          <img src={c} alt="" />
+          <img src={c} alt="" />
+          <img src={c} alt="" />
+          <img src={c} alt="" />
+        </div>
+        <div>
+          <img src={c} alt="" />
+          <img src={c} alt="" />
+          <img src={c} alt="" />
+          <img src={c} alt="" />
+          <img src={c} alt="" />
+          <img src={c} alt="" />
+          <img src={c} alt="" />
+        </div>
+      </div>
     </div>
   );
 };

@@ -1,0 +1,177 @@
+.statistics {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.stats_img {
+    padding: 35px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffe9e9;
+    background-color: #dbfdfd;
+    border-radius: 10px;
+
+    img {
+        width: 70%;
+    }
+}
+
+.stats_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+
+    .stats_text_infos {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .stats_title {
+            font-size: 43px;
+            line-height: 45px;
+            font-family: Prompt;
+
+            &::first-letter {
+                color: var(--primary-5);
+            }
+        }
+
+        p {
+            color: var(--gray-2);
+            font-size: 20px;
+        }
+
+        span {
+            color: var(--gray-2);
+        }
+    }
+
+    .data_transaction {
+        display: flex;
+        justify-content: space-between;
+        font-family: Prompt;
+
+        .data_crm {
+            text-align: center;
+
+            .data_tr_num {
+                font-size: 40px;
+                color: rgb(3, 202, 119);
+                line-height: 43px;
+            }
+
+            .data_tr_title {
+                font-family: Poppins;
+                font-size: 16px;
+            }
+
+        }
+    }
+
+    .aboutUs_btn {
+        width: 160px;
+        padding: 15px;
+        background-color: var(--bs-teal);
+        text-transform: capitalize;
+    }
+
+    @media(max-width:1200px) {
+        & {
+            gap: 30px;
+        }
+
+        .stats_text_infos {
+            .stats_title {
+                font-size: 36px;
+                line-height: 38px;
+            }
+
+            p {
+                font-size: 17px;
+            }
+
+            span {
+                font-size: 15px;
+            }
+        }
+
+        .data_transaction {
+            .data_crm {
+                text-align: center;
+
+                .data_tr_num {
+                    font-size: 32px;
+                }
+
+                .data_tr_title {
+                    font-size: 14px;
+                }
+
+            }
+        }
+    }
+
+    @media(max-width:512px) {
+        & {
+            gap: 25px;
+        }
+
+        .stats_text_infos {
+            gap: 10px;
+
+            .stats_title {
+                font-size: 28px;
+                line-height: 30px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            span {
+                font-size: 14px;
+            }
+        }
+
+        .data_transaction {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+
+            .data_crm {
+                text-align: start;
+
+                .data_tr_num {
+                    font-size: 38px;
+                    line-height: 40px;
+                }
+
+                .data_tr_title {
+                    font-size: 16px;
+                }
+
+            }
+        }
+    }
+
+}
+
+@media(max-width:992px) {
+    .statistics {
+        grid-template-columns: 1fr;
+        margin-top: 55px;
+    }
+    .stats_img{
+        padding: 25px 0;
+    }
+
+    .stats_text_infos {
+        .stats_title {
+            text-align: center;
+        }
+    }
+}
