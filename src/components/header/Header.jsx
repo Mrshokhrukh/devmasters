@@ -70,13 +70,13 @@ const Header = () => {
           <NavLink to="/" className="nav_link">
             Asosiy
           </NavLink>
-          <NavLink to="/" className="nav_link">
+          <NavLink to="/services" className="nav_link">
             Hizmatlar
           </NavLink>
-          <NavLink to="/" className="nav_link">
+          <NavLink to="/prices" className="nav_link">
             Narxlar
           </NavLink>
-          <NavLink to="/" className="nav_link">
+          <NavLink to="/works" className="nav_link">
             ishlarimiz
           </NavLink>
         </div>
