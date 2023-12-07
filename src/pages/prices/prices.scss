@@ -1,0 +1,58 @@
+.prices_page_title {
+    font-family: Prompt;
+    text-align: center;
+    margin-top: 65px;
+    font-size: 47px;
+    line-height: 50px;
+
+    span {
+        color: var(--primary-5);
+    }
+}
+
+.prices_page {
+    margin-top: 55px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 25px;
+}
+
+@media(max-width:992px) {
+    .prices_page {
+        margin-top: 45px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .prices_page_title {
+        font-size: 38px;
+        line-height: 42px;
+        margin-top: 35px;
+    }
+}
+
+@media(max-width:768px) {
+    .prices_page {
+        grid-template-columns: 1fr;
+        margin-top: 30px;
+    }
+
+    .prices_page_title {
+        font-size: 32px;
+        line-height: 35px;
+        margin-top: 25px;
+    }
+}
+
+@media(max-width:512px) {
+
+    .prices_page_title {
+        font-size: 26px;
+        line-height: 29px;
+        margin-top: 15px;
+    }
+
+    .prices_page {
+        margin-top: 20px;
+    }
+}

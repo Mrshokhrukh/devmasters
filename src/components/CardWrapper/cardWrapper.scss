@@ -92,76 +92,139 @@
         background-color: var(--primary-7);
     }
 }
+
 .designed_card_fourth {
     border-color: var(--primary-5);
     background-color: rgba(0, 204, 255, 0.089);
+    transition: 0.4s ease;
 
     .card_icon {
         background-color: var(--primary-5);
     }
+
+    &:hover {
+        transform: translateY(-3px);
+        cursor: pointer;
+    }
 }
+
 .designed_card_fives {
     border-color: var(--primary-1);
     background-color: rgba(89, 0, 255, 0.089);
+    transition: 0.4s ease;
 
     .card_icon {
         background-color: var(--primary-1);
     }
+
+    &:hover {
+        transform: translateY(-3px);
+        cursor: pointer;
+    }
 }
+
 .designed_card_six {
     border-color: var(--primary-3);
     background-color: rgba(255, 0, 0, 0.089);
+    transition: 0.4s ease;
 
     .card_icon {
         background-color: var(--primary-3);
     }
+
+    &:hover {
+        transform: translateY(-3px);
+        cursor: pointer;
+    }
 }
+
 .designed_card_seven {
     border-color: var(--primary-2);
     background-color: rgba(225, 0, 255, 0.089);
+    transition: 0.4s ease;
 
     .card_icon {
         background-color: var(--primary-2);
     }
+
+    &:hover {
+        transform: translateY(-3px);
+        cursor: pointer;
+    }
 }
+
 .designed_card_eight {
     border-color: var(--primary-6);
     background-color: rgba(255, 230, 0, 0.089);
+    transition: 0.4s ease;
 
     .card_icon {
         background-color: var(--primary-6);
     }
+
+    &:hover {
+        transform: translateY(-3px);
+        cursor: pointer;
+    }
 }
+
 .designed_card_nine {
     border-color: var(--primary-7);
     background-color: rgba(0, 255, 136, 0.089);
+    transition: 0.4s ease;
 
     .card_icon {
         background-color: var(--primary-7);
     }
+
+    &:hover {
+        transform: translateY(-3px);
+        cursor: pointer;
+    }
 }
+
 .designed_card_ten {
     border-color: var(--bs-orange);
     background-color: rgba(255, 166, 0, 0.089);
+    transition: 0.4s ease;
 
     .card_icon {
         background-color: var(--bs-orange);
     }
-    
+
+    &:hover {
+        transform: translateY(-3px);
+        cursor: pointer;
+    }
+
 }
+
 .designed_card_eleven {
     border-color: var(--bs-cyan);
     background-color: rgba(0, 238, 255, 0.089);
+    transition: 0.4s ease;
 
     .card_icon {
         background-color: var(--bs-cyan);
     }
+
+    &:hover {
+        transform: translateY(-3px);
+        cursor: pointer;
+    }
 }
+
 .designed_card_twelve {
     border-color: var(--bs-dark);
     background-color: rgba(2, 61, 255, 0.089);
+    transition: 0.4s ease;
 
     .card_icon {
         background-color: var(--bs-dark);
+    }
+
+    &:hover {
+        transform: translateY(-3px);
+        cursor: pointer;
     }
 }

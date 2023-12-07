@@ -1,0 +1,232 @@
+[class*='priceCard'] {
+    border-radius: 10px;
+    padding: 25px;
+    font-family: Prompt;
+    text-transform: capitalize;
+    height: max-content;
+
+    .priceCard_inner {
+        background-color: white;
+
+    }
+
+    .pr_card_top {
+        padding: 5px;
+        padding-bottom: 25px;
+        border-bottom: 1px solid currentColor;
+
+        .pr_card_title {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            color: currentColor;
+        }
+
+        .pr_card_explain {
+            color: var(--gray-2);
+        }
+    }
+
+    .pr_card_info {
+        padding: 10px;
+        padding-top: 10px;
+
+        .pr_card_price {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .include_ttl {
+            text-transform: none;
+            font-weight: 600;
+            font-family: Poppins;
+        }
+
+        .inc_desc {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            p {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                color: var(--gray-2);
+
+                span {
+                    line-height: 0;
+                    color: currentColor;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+
+    .pr_priceCard_btn {
+        margin-top: 25px;
+        color: white;
+        text-align: center;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}
+
+
+@media(max-width:1100px) {
+    [class*='priceCard'] {
+        .priceCard_inner {
+            padding: 15px;
+        }
+
+        .pr_card_top {
+            padding: 2px;
+            padding-bottom: 15px;
+        }
+
+        .pr_card_info {
+            padding: 5px;
+            padding-top: 10px;
+
+            .pr_card_price {
+                font-size: 28px;
+            }
+        }
+    }
+}
+
+
+
+.priceCard_1 {
+    background-color: rgba(255, 0, 0, 0.13);
+
+    .pr_card_top {
+        color: var(--primary-0);
+    }
+
+    .pr_card_info .inc_desc p span {
+        color: var(--primary-0);
+    }
+
+    .pr_priceCard_btn {
+        background-color: var(--primary-0);
+    }
+}
+
+.priceCard_2 {
+    background-color: rgba(0, 195, 255, 0.13);
+
+    .pr_card_top {
+        color: var(--primary-8);
+    }
+
+    .pr_card_info .inc_desc p span {
+        color: var(--primary-8);
+    }
+
+    .pr_priceCard_btn {
+        background-color: var(--primary-8);
+    }
+}
+
+.priceCard_3 {
+    background-color: rgba(255, 217, 0, 0.13);
+
+    .pr_card_top {
+        color: var(--primary-6);
+    }
+
+    .pr_card_info .inc_desc p span {
+        color: var(--primary-6);
+    }
+
+    .pr_priceCard_btn {
+        background-color: var(--primary-6);
+    }
+}
+
+.priceCard_4 {
+    background-color: rgba(153, 0, 255, 0.13);
+
+    .pr_card_top {
+        color: var(--primary-1);
+    }
+
+    .pr_card_info .inc_desc p span {
+        color: var(--primary-1);
+    }
+
+    .pr_priceCard_btn {
+        background-color: var(--primary-1);
+    }
+}
+
+.priceCard_5 {
+    background-color: rgba(0, 255, 98, 0.13);
+
+    .pr_card_top {
+        color: var(--primary-7);
+    }
+
+    .pr_card_info .inc_desc p span {
+        color: var(--primary-7);
+    }
+
+    .pr_priceCard_btn {
+        background-color: var(--primary-7);
+    }
+}
+
+.priceCard_6 {
+    background-color: rgba(255, 0, 242, 0.13);
+
+    .pr_card_top {
+        color: var(--primary-2);
+    }
+
+    .pr_card_info .inc_desc p span {
+        color: var(--primary-2);
+    }
+
+    .pr_priceCard_btn {
+        background-color: var(--primary-2);
+    }
+}
+
+.priceCard_7 {
+    background-color: rgba(0, 119, 255, 0.13);
+
+    .pr_card_top {
+        color: var(--primary-5);
+    }
+
+    .pr_card_info .inc_desc p span {
+        color: var(--primary-5);
+    }
+    
+    .pr_priceCard_btn {
+        background-color: var(--primary-5);
+    }
+}
+
+.priceCard_8 {
+    background-color: rgba(255, 187, 0, 0.13);
+
+    .pr_card_top {
+        color: var(--bs-orange);
+    }
+
+    .pr_card_info .inc_desc p span {
+        color: var(--bs-orange);
+    }
+    
+    .pr_priceCard_btn {
+        background-color: var(--bs-orange);
+    }
+}
