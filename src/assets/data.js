@@ -31,7 +31,7 @@ export const service_prices = [
     num: "1",
     title: "landing page",
     price: 220,
-    explain: "ugsd sdgusgwgs sgduagdsu",
+    explain: "",
     includes: [
       "domain UZ",
       "Xosting 25GB",
