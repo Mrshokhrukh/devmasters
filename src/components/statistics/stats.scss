@@ -76,7 +76,18 @@
         width: 160px;
         padding: 15px;
         background-color: var(--bs-teal);
-        text-transform: capitalize;
+        text-transform: none;
+        border: none;
+        border-radius: 8px;
+        font-size: 14px;
+        color: white;
+        font-weight: 600;
+        cursor: pointer;
+        transition: 0.3s ease;
+
+        &:hover {
+            background-color: rgb(73, 219, 183);
+        }
     }
 
     @media(max-width:1200px) {
@@ -165,7 +176,8 @@
         grid-template-columns: 1fr;
         margin-top: 55px;
     }
-    .stats_img{
+
+    .stats_img {
         padding: 25px 0;
     }
 

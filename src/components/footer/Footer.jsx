@@ -11,7 +11,7 @@ import { MdOutlineCopyright } from "react-icons/md";
 const Footer = () => {
   return (
     <div className="container">
-      <div className="footer">
+      <div className="footer" id="footer">
         <div className="footer_top">
           <img src="https://assets-global.website-files.com/6508112c3d44ecc7a285dc4d/650a84e01fc9a171d434b376_sasninja.svg" className="footer_logo" alt="" />
         </div>

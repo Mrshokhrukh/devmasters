@@ -1,6 +1,6 @@
 .advertising_fss {
     width: 100%;
-    
+
     display: grid;
     grid-template-columns: .75fr 1fr;
     gap: 35px;
@@ -47,12 +47,25 @@
 
             .btn_tryFree {
                 background-color: var(--primary-1);
+                transition: 0.3s ease;
+
+                &:hover {
+                    color: var(--primary-1);
+                    background-color: white;
+                    border: 1px solid var(--primary-1)
+                }
             }
 
             .btn_contact {
                 background-color: white;
                 border: 1px solid var(--primary-8);
                 color: var(--primary-8);
+                transition: 0.3s ease;
+
+                &:hover {
+                    background-color: var(--primary-8);
+                    color: white;
+                }
             }
         }
     }

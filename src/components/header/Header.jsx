@@ -77,7 +77,7 @@ const Header = () => {
             Narxlar
           </NavLink>
           <NavLink to="/works" className="nav_link">
-            ishlarimiz
+            Ishlarimiz
           </NavLink>
         </div>
         <div className="nav_right">
@@ -113,7 +113,9 @@ const Header = () => {
               </ul>
             </div>
           </div>
-          <button className="btn contact_btn">Contact</button>
+          <a href="#footer">
+            <button className="btn contact_btn">Contact</button>
+          </a>
         </div>
       </div>
     </div>

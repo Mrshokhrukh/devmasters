@@ -3,9 +3,14 @@ import "./info.scss";
 import { MdAccessTime } from "react-icons/md";
 import { GiTakeMyMoney } from "react-icons/gi";
 import { TbDeviceImacCode } from "react-icons/tb";
+import { useEffect } from "react";
+import Aos from "aos";
 const InfoGram = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
-    <div className="infoGram container">
+    <div className="infoGram container" data-aos="fade-up">
       <h1 className="infogram_title">Nega aynan biz ?</h1>
       <div className="infogram_cards">
         <div>

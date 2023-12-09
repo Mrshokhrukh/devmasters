@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./services.scss";
 import CardWrapper from "../../components/CardWrapper/CardWrapper";
 import { IoPhonePortraitOutline } from "react-icons/io5";
@@ -11,18 +11,23 @@ import { TbRobotFace } from "react-icons/tb";
 import { TbWorldWww } from "react-icons/tb";
 import { TbDeviceMobileUp } from "react-icons/tb";
 import { FaCartArrowDown } from "react-icons/fa";
+import Aos from "aos";
 const Services = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    Aos.init();
+  }, []);
   return (
     <div className="container">
-      <div className="services_page">
+      <div className="services_page" data-aos="fade-up">
         <h1 className="services_title">
           <span>Nega aynan biz?</span> <br /> Nega ko`pchilik odamlar bizni
           tanlashadi? <br />
           Afzalliklarimiz
         </h1>
       </div>
-      <div className="services_grid">
-        <div>
+      <div className="services_grid" data-aos="fade-up">
+        <div data-aos="fade-up">
           <CardWrapper
             num={"fourth"}
             icon={<TbWorldSearch />}
@@ -32,7 +37,7 @@ const Services = () => {
             }
           />
         </div>
-        <div>
+        <div data-aos="fade-up">
           <CardWrapper
             num={"fives"}
             icon={<TbRobotFace />}
@@ -42,7 +47,7 @@ const Services = () => {
             }
           />
         </div>
-        <div>
+        <div data-aos="fade-up">
           <CardWrapper
             num={"six"}
             icon={<TbDeviceMobileUp />}
@@ -52,7 +57,7 @@ const Services = () => {
             }
           />
         </div>
-        <div>
+        <div data-aos="fade-up">
           <CardWrapper
             num={"seven"}
             icon={<RiAdminFill />}
@@ -62,7 +67,7 @@ const Services = () => {
             }
           />
         </div>
-        <div>
+        <div data-aos="fade-up">
           <CardWrapper
             num={"eight"}
             icon={<SiCivicrm />}
@@ -71,7 +76,7 @@ const Services = () => {
               qo'llaniladigan sistema yaratib beramiz.`}
           />
         </div>
-        <div>
+        <div data-aos="fade-up">
           <CardWrapper
             num={"nine"}
             icon={<FaCartArrowDown />}
@@ -81,7 +86,7 @@ const Services = () => {
             }
           />
         </div>
-        <div>
+        <div data-aos="fade-up">
           <CardWrapper
             num={"ten"}
             icon={<TbWorldWww />}
@@ -91,7 +96,7 @@ const Services = () => {
             }
           />
         </div>
-        <div>
+        <div data-aos="fade-up">
           <CardWrapper
             num={"eleven"}
             icon={<RiSecurePaymentLine />}
@@ -101,7 +106,7 @@ const Services = () => {
             }
           />
         </div>
-        <div>
+        <div data-aos="fade-up">
           <CardWrapper
             num={"twelve"}
             icon={<IoPhonePortraitOutline />}

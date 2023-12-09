@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaRegCircleCheck } from "react-icons/fa6";
 import "./priceCard.scss";
+import Aos from "aos";
 const PriceCard = ({ num, title, explain, price, includes }) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    Aos.init();
+  }, []);
   return (
-    <div className={`priceCard_${num}`}>
+    <div className={`priceCard_${num}`} data-aos="fade-up">
       <div className="priceCard_inner">
         <div className="pr_card_top">
           <p className="pr_card_title">{title}</p>

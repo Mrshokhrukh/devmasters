@@ -8,7 +8,16 @@
     font-size: 14px;
     font-weight: 600;
     cursor: pointer;
+    transition: 0.3s ease;
+    border: 1px solid white;
+
+    &:hover {
+        color: var(--primary-5);
+        background-color: white;
+        border: 1px solid var(--primary-5)
+    }
 }
+
 
 .ads_lenting {
     margin-top: 100px;

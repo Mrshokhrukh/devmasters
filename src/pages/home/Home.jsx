@@ -1,13 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./home.scss";
 import checkmark from "../../assets/checkmark.png";
 import { Player, Controls } from "@lottiefiles/react-lottie-player";
 import Wrapper from "../../components/wrapper/Wrapper";
+import Aos from "aos";
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    Aos.init();
+  }, []);
+
   return (
     <div className="home container">
-      <div className="home_content_wrapper">
+      <div className="home_content_wrapper" data-aos="fade-up">
         <div className="content_left  animate__animated animate__bounceInLeft">
           <h2 className="title">zamonaviy Web sayt yaratish xizmati</h2>
           <p className="description">

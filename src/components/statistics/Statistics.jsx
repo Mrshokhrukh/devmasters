@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./stats.scss";
 import img from "../../assets/650925f91a51bdc536b4d41a_element-image-01.svg";
+import Aos from "aos";
 
 const Statistics = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
     <div className="container">
-      <div className="statistics">
+      <div className="statistics" data-aos="fade-up">
         <div className="stats_img">
           <img src={img} alt="" />
         </div>
@@ -44,7 +48,7 @@ const Statistics = () => {
             </div>
           </div>
 
-          <button className="btn aboutUs_btn">biz haqimizda</button>
+          <button className="aboutUs_btn">Biz haqimizda</button>
         </div>
       </div>
     </div>

@@ -1,15 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./prices.scss";
 import { service_prices } from "../../assets/data";
 import PriceCard from "../../components/priceCard/PriceCard";
+import Aos from "aos";
 
 const Prices = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    Aos.init();
+  }, []);
   return (
     <div className="container">
-      <h1 className="prices_page_title">
+      <h1 className="prices_page_title" data-aos="fade-up">
         Siz uchun hamyonbop narxdagi <span>Veb Saytlar</span>
       </h1>
-      <div className="prices_page">
+      <div className="prices_page" data-aos="fade-up">
         {service_prices.map((item, i) => {
           return (
             <PriceCard
