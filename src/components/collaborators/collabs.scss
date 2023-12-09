@@ -7,6 +7,8 @@
     overflow: hidden;
     border-radius: 10px;
     background-color: #e5f1ff;
+    position: relative;
+    z-index: 1;
 
     img {
         width: 100px;
