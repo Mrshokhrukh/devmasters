@@ -5,6 +5,7 @@ import { GiTakeMyMoney } from "react-icons/gi";
 import { TbDeviceImacCode } from "react-icons/tb";
 import { useEffect } from "react";
 import Aos from "aos";
+import Bulb from "../../test/Bulb";
 const InfoGram = () => {
   useEffect(() => {
     Aos.init();

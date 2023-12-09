@@ -3,6 +3,7 @@ import "./stats.scss";
 import img from "../../assets/650925f91a51bdc536b4d41a_element-image-01.svg";
 import Aos from "aos";
 
+
 const Statistics = () => {
   useEffect(() => {
     Aos.init();
@@ -10,6 +11,7 @@ const Statistics = () => {
   return (
     <div className="container">
       <div className="statistics" data-aos="fade-up">
+      
         <div className="stats_img">
           <img src={img} alt="" />
         </div>

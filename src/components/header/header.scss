@@ -5,6 +5,7 @@
     background: white;
     padding: 15px 0;
     transition: all 0.3s ease;
+
 }
 
 .top_head.scrolled {
@@ -24,11 +25,19 @@
     grid-template-columns: .75fr 1fr .75fr;
     gap: 20px;
     align-items: center;
-
+    position: relative;
+    z-index: 1000;
 
     .logo {
         display: flex;
         justify-content: flex-start;
+        padding-left: 10px;
+
+        img {
+            cursor: pointer;
+            width: 100px;
+            object-fit: cover;
+        }
     }
 
     .nav_links {
@@ -182,6 +191,28 @@
     }
 }
 
+.burgerMenu {
+    display: flex;
+    justify-content: flex-end;
+    display: none;
+    color: var(--primary-8);
+    font-weight: bold;
+    padding-right: 10px;
+
+    .sidebarIconAction {
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        color: var(--primary-8);
+    }
+
+    .sidebarIconAction.closer {
+        color: var(--primary-0);
+    }
+
+}
+
 @media(max-width:1124px) {
     .header {
         grid-template-columns: .75fr 1.25fr .55fr;
@@ -207,6 +238,10 @@
 }
 
 @media(max-width:768px) {
+    .burgerMenu {
+        display: flex;
+    }
+
     .header {
         grid-template-columns: 1fr 1fr;
 

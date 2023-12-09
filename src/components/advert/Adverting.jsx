@@ -8,8 +8,8 @@ const Adverting = () => {
   }, []);
   return (
     <div className="advertising_fss container">
-      <img src={img} alt="" data-aos="fade-right" />
-      <div className="adverting_right" data-aos="fade-left">
+      <img src={img} alt="" data-aos="fade-up" />
+      <div className="adverting_right" data-aos="fade-up">
         <h1>Biz bilan biznesingizni rivojlantiring</h1>
         <p>
           Brendizga mos veb-saytga buyurtma berishda siz uni ishlab chiqishni

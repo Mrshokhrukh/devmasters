@@ -1,12 +1,15 @@
 import Adverting from "./components/advert/Adverting";
 import Collabs from "./components/collaborators/Collabs";
 import InfoGram from "./components/infoGram/InfoGram";
+import Sidebar from "./components/sidebar/Sidebar";
 import Statistics from "./components/statistics/Statistics";
 import Home from "./pages/home/Home";
-
+import { useDispatch } from "react-redux";
+import { closeSide } from "./redux/sidebarSlice";
 const Index = () => {
+  let dispatch = useDispatch();
   return (
-    <>
+    <div onClick={() => dispatch(closeSide())}>
       <Home />
       <InfoGram />
       <div className="ads_lenting">
@@ -14,7 +17,7 @@ const Index = () => {
         <Collabs />
       </div>
       <Statistics />
-    </>
+    </div>
   );
 };
 

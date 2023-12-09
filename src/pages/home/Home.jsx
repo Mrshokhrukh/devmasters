@@ -4,6 +4,7 @@ import checkmark from "../../assets/checkmark.png";
 import { Player, Controls } from "@lottiefiles/react-lottie-player";
 import Wrapper from "../../components/wrapper/Wrapper";
 import Aos from "aos";
+import Bulb from "../../test/Bulb";
 
 const Home = () => {
   useEffect(() => {
@@ -12,7 +13,9 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="home container">
+    <div className="home container" >
+      <Bulb num={"1"} />
+      <Bulb num={"2"} />
       <div className="home_content_wrapper" data-aos="fade-up">
         <div className="content_left  animate__animated animate__bounceInLeft">
           <h2 className="title">zamonaviy Web sayt yaratish xizmati</h2>

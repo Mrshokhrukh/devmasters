@@ -1,8 +1,16 @@
 import React, { useEffect, useState } from "react";
 import "./header.scss";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { langs } from "../../assets/data";
+import logo from "../../assets/logo.png";
+import { useDispatch, useSelector } from "react-redux";
+import { closeSide, openSide } from "../../redux/sidebarSlice";
+import { BsFillMenuButtonFill } from "react-icons/bs";
+import { LuPanelRightClose } from "react-icons/lu";
 const Header = () => {
+  let dispatch = useDispatch();
+  let navigate = useNavigate();
+  let isOpen = useSelector((state) => state.sidebar.isOpen);
   const [isOpenLang, setIsOpenLang] = useState(false);
   const [topClass, setTopClass] = useState("top_head");
   const [scrollY, setScrollY] = useState(0);
@@ -58,13 +66,8 @@ const Header = () => {
   return (
     <div className={topClass}>
       <div className="header container">
-        <div className="logo">
-          <img
-            src={
-              "https://assets-global.website-files.com/6508112c3d44ecc7a285dc4d/650a84e01fc9a171d434b376_sasninja.svg"
-            }
-            alt=""
-          />
+        <div className="logo" onClick={() => navigate("/")}>
+          <img src={logo} alt="" />
         </div>
         <div className="nav_links">
           <NavLink to="/" className="nav_link">
@@ -116,6 +119,18 @@ const Header = () => {
           <a href="#footer">
             <button className="btn contact_btn">Contact</button>
           </a>
+        </div>
+
+        <div className="burgerMenu">
+          {isOpen ? (
+            <button onClick={() => dispatch(closeSide())} className="sidebarIconAction closer">
+              <LuPanelRightClose />
+            </button>
+          ) : (
+            <button onClick={() => dispatch(openSide())} className="sidebarIconAction opener">
+              <BsFillMenuButtonFill />
+            </button>
+          )}
         </div>
       </div>
     </div>

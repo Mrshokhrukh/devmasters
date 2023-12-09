@@ -1,5 +1,6 @@
 .infoGram {
     padding-top: 70px;
+
 }
 
 .infogram_title {
@@ -13,7 +14,8 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 50px;
     margin: 50px 0;
-
+    position: relative;
+    z-index: 10;
 
 }
 
@@ -43,6 +45,7 @@
         grid-template-columns: 1fr;
         margin: 20px 0;
         padding: 15px;
+
         div:nth-child(1) {
             grid-column: 1 / 3;
         }

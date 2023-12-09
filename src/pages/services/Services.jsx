@@ -12,13 +12,17 @@ import { TbWorldWww } from "react-icons/tb";
 import { TbDeviceMobileUp } from "react-icons/tb";
 import { FaCartArrowDown } from "react-icons/fa";
 import Aos from "aos";
+import { useDispatch } from "react-redux";
+import { closeSide } from "../../redux/sidebarSlice";
 const Services = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
     Aos.init();
   }, []);
+
+  let dispatch = useDispatch();
   return (
-    <div className="container">
+    <div className="container" onClick={() => dispatch(closeSide())}>
       <div className="services_page" data-aos="fade-up">
         <h1 className="services_title">
           <span>Nega aynan biz?</span> <br /> Nega ko`pchilik odamlar bizni

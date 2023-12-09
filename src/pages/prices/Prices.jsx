@@ -3,14 +3,17 @@ import "./prices.scss";
 import { service_prices } from "../../assets/data";
 import PriceCard from "../../components/priceCard/PriceCard";
 import Aos from "aos";
+import { useDispatch } from "react-redux";
+import { closeSide } from "../../redux/sidebarSlice";
 
 const Prices = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
     Aos.init();
   }, []);
+  let dispatch = useDispatch();
   return (
-    <div className="container">
+    <div className="container" onClick={() => dispatch(closeSide())}>
       <h1 className="prices_page_title" data-aos="fade-up">
         Siz uchun hamyonbop narxdagi <span>Veb Saytlar</span>
       </h1>

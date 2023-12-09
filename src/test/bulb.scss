@@ -1,34 +1,45 @@
-.bulb_of_1 {
-    width: 250px;
-    height: 150px;
-    background-color: var(--primary-0);
+[class*='bulbBlur'] {
+    background-color: red;
+    width: 15%;
+    height: 20%;
+    border-radius: 70% 30% 90% 14%;
+    background-color: white;
     position: absolute;
-    left: 0;
-    top: -100px;
-    z-index: 0;
-    filter: blur(190px);
-    z-index: -10;
+    filter: blur(200px);
 }
 
-.bulb_of_2 {
-    width: 250px;
-    height: 150px;
-    background-color: var(--primary-6);
-    position: absolute;
-    right: 0;
-    bottom: -50px;
-    z-index: 0;
-    filter: blur(210px);
-}
-
-.bulb_of_3 {
-    width: 250px;
-    height: 150px;
-    background-color: var(--bs-teal);
-    position: absolute;
+.blur_1 {
+    background-color: var(--bs-danger);
     top: 0;
-    left: 0px;
-    z-index: 0;
-    filter: blur(210px);
-    z-index: 0;
+    left: 0;
+}
+
+.blur_2 {
+    background-color: var(--primary-5);
+    right: 2%;
+    top: 0;
+}
+
+.blur_3 {
+    background-color: var(--primary-1);
+    left: 2%;
+    top: 50px;
+}
+
+.blur_4 {
+    background-color: var(--primary-6);
+    right: 2%;
+    top: 50px;
+}
+
+.blur_5 {
+    background-color: var(--primary-4);
+    left: 2%;
+    top: -100px;
+}
+
+.blur_6 {
+    background-color: var(--primary-7);
+    right: 2%;
+    top: 50px;
 }

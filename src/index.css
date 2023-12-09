@@ -44,7 +44,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary: rgb(13, 110, 253);
+  /* --bs-primary: rgb(13, 110, 253); */
   --bs-secondary: rgb(108, 117, 125);
 
   --bs-info: rgb(13, 202, 240);
@@ -97,7 +97,6 @@ a {
 .container {
   max-width: 1400px;
   margin: auto;
-  position: relative;
 }
 @media (max-width: 1400px) {
   .container {

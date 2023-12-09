@@ -3,6 +3,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+
 }
 
 .stats_img {
@@ -24,6 +25,8 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 50px;
+    position: relative;
+    z-index: 10;
 
     .stats_text_infos {
         display: flex;
