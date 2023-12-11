@@ -9,7 +9,7 @@ import { closeSide } from "./redux/sidebarSlice";
 const Index = () => {
   let dispatch = useDispatch();
   return (
-    <div onClick={() => dispatch(closeSide())}>
+    <div onClick={() => dispatch(closeSide())} className="homepage_margin">
       <Home />
       <InfoGram />
       <div className="ads_lenting">

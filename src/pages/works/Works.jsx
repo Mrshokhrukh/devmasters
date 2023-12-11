@@ -11,35 +11,37 @@ const Works = () => {
     Aos.init();
   }, []);
   return (
-    <div className="container">
-      <h1 className="ourWorks_title" data-aos="fade-up">
-        Bizning oxirgi <span>ishlarimiz</span>
-      </h1>
-      <div className="works_page" data-aos="fade-up">
-        <a href="https://oqtepalavash.uz/" target="_blank" data-aos="fade-up">
-          <WorksCard
-            num={"works_1"}
-            src={oq}
-            title={"oqtepalavash.uz"}
-            desc={"oqtepa lavash brendi uchun qilingan sayt"}
-          />
-        </a>
-        <a href="http://maxfire.uz/" target="_blank" data-aos="fade-up">
-          <WorksCard
-            num={"works_2"}
-            src={max}
-            title={"maxfire.uz"}
-            desc={"maxfire ko'mir kampaniyasi uchun katalog sayt"}
-          />
-        </a>
-        <a href="http://belissimo.uz/" target="_blank" data-aos="fade-up">
-          <WorksCard
-            num={"works_3"}
-            src={beliss}
-            title={"belissimo.uz"}
-            desc={"belissimo lavash brendi uchun qilingan sayt"}
-          />
-        </a>
+    <div className="works_page_margin">
+      <div className="container">
+        <h1 className="ourWorks_title" data-aos="fade-up">
+          Bizning oxirgi <span>ishlarimiz</span>
+        </h1>
+        <div className="works_page" data-aos="fade-up">
+          <a href="https://oqtepalavash.uz/" target="_blank" data-aos="fade-up">
+            <WorksCard
+              num={"works_1"}
+              src={oq}
+              title={"oqtepalavash.uz"}
+              desc={"oqtepa lavash brendi uchun qilingan sayt"}
+            />
+          </a>
+          <a href="http://maxfire.uz/" target="_blank" data-aos="fade-up">
+            <WorksCard
+              num={"works_2"}
+              src={max}
+              title={"maxfire.uz"}
+              desc={"maxfire ko'mir kampaniyasi uchun katalog sayt"}
+            />
+          </a>
+          <a href="http://belissimo.uz/" target="_blank" data-aos="fade-up">
+            <WorksCard
+              num={"works_3"}
+              src={beliss}
+              title={"belissimo.uz"}
+              desc={"belissimo lavash brendi uchun qilingan sayt"}
+            />
+          </a>
+        </div>
       </div>
     </div>
   );

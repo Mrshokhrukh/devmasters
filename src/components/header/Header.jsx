@@ -50,7 +50,7 @@ const Header = () => {
 
   const handleScroll = () => {
     setScrollY(window.scrollY);
-    if (scrollY > 90) {
+    if (scrollY > 20) {
       setTopClass("top_head scrolled");
     } else {
       setTopClass("top_head");
@@ -74,7 +74,7 @@ const Header = () => {
             Asosiy
           </NavLink>
           <NavLink to="/services" className="nav_link">
-            Hizmatlar
+            Xizmatlar
           </NavLink>
           <NavLink to="/prices" className="nav_link">
             Narxlar

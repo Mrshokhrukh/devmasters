@@ -1,7 +1,7 @@
 import "./collabs.scss";
-import a from "../../assets/Annotation 2023-12-09 143536.png";
-import b from "../../assets/Annotation 2023-12-09 143758.png";
-import c from "../../assets/Annotation 2023-12-09 143851.png";
+import a from "../../assets/logos/maxfire.png";
+import b from "../../assets/logos/logo.webp";
+import c from "../../assets/logos/logo_2.0.svg";
 import Aos from "aos";
 import { useEffect } from "react";
 const Collabs = () => {

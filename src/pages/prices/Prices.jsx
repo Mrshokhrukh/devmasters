@@ -13,23 +13,25 @@ const Prices = () => {
   }, []);
   let dispatch = useDispatch();
   return (
-    <div className="container" onClick={() => dispatch(closeSide())}>
-      <h1 className="prices_page_title" data-aos="fade-up">
-        Siz uchun hamyonbop narxdagi <span>Veb Saytlar</span>
-      </h1>
-      <div className="prices_page" data-aos="fade-up">
-        {service_prices.map((item, i) => {
-          return (
-            <PriceCard
-              key={i}
-              num={item.num}
-              title={item.title}
-              explain={item.explain}
-              price={item.price}
-              includes={item.includes}
-            />
-          );
-        })}
+    <div className="prices_page_margin">
+      <div className="container" onClick={() => dispatch(closeSide())}>
+        <h1 className="prices_page_title" data-aos="fade-up">
+          Siz uchun hamyonbop narxdagi <span>Veb Saytlar</span>
+        </h1>
+        <div className="prices_page" data-aos="fade-up">
+          {service_prices.map((item, i) => {
+            return (
+              <PriceCard
+                key={i}
+                num={item.num}
+                title={item.title}
+                explain={item.explain}
+                price={item.price}
+                includes={item.includes}
+              />
+            );
+          })}
+        </div>
       </div>
     </div>
   );
