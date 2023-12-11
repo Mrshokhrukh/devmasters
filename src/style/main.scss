@@ -32,5 +32,11 @@
 }
 
 .homepage_margin {
-    margin-top: 85px;
+    margin-top: 95px;
+}
+
+@media(max-width:768px) {
+    .homepage_margin {
+        margin-top: 75px;
+    }
 }
