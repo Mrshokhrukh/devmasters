@@ -7,13 +7,13 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaTelegramPlane } from "react-icons/fa";
 import { IoCallSharp } from "react-icons/io5";
 import { MdOutlineCopyright } from "react-icons/md";
-
+import logo from "../../assets/logo.png";
 const Footer = () => {
   return (
     <div className="container">
       <div className="footer" id="footer">
         <div className="footer_top">
-          <img src="https://assets-global.website-files.com/6508112c3d44ecc7a285dc4d/650a84e01fc9a171d434b376_sasninja.svg" className="footer_logo" alt="" />
+          <img src={logo} className="footer_logo" alt="" width={150} />
         </div>
         <div className="footer_center">
           <div className="ft_ct_wars">
@@ -82,7 +82,9 @@ const Footer = () => {
             <MdOutlineCopyright />
           </span>
           <p>Copyright 2023.</p>
-          <p>powered by <span>devmasters</span></p>
+          <p>
+            powered by <span>devmasters</span>
+          </p>
         </div>
       </div>
     </div>

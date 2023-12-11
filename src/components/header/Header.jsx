@@ -50,7 +50,7 @@ const Header = () => {
 
   const handleScroll = () => {
     setScrollY(window.scrollY);
-    if (scrollY > 20) {
+    if (scrollY > 50) {
       setTopClass("top_head scrolled");
     } else {
       setTopClass("top_head");
@@ -123,11 +123,17 @@ const Header = () => {
 
         <div className="burgerMenu">
           {isOpen ? (
-            <button onClick={() => dispatch(closeSide())} className="sidebarIconAction closer">
+            <button
+              onClick={() => dispatch(closeSide())}
+              className="sidebarIconAction closer"
+            >
               <LuPanelRightClose />
             </button>
           ) : (
-            <button onClick={() => dispatch(openSide())} className="sidebarIconAction opener">
+            <button
+              onClick={() => dispatch(openSide())}
+              className="sidebarIconAction opener"
+            >
               <BsFillMenuButtonFill />
             </button>
           )}
