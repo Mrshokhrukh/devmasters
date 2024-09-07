@@ -1,11 +1,12 @@
 import Adverting from "./components/advert/Adverting";
 import Collabs from "./components/collaborators/Collabs";
 import InfoGram from "./components/infoGram/InfoGram";
-import Sidebar from "./components/sidebar/Sidebar";
+
 import Statistics from "./components/statistics/Statistics";
 import Home from "./pages/home/Home";
 import { useDispatch } from "react-redux";
 import { closeSide } from "./redux/sidebarSlice";
+import ContactForm from "./components/contactForm/ContactForm";
 const Index = () => {
   let dispatch = useDispatch();
   return (
@@ -17,6 +18,7 @@ const Index = () => {
         <Collabs />
       </div>
       <Statistics />
+      <ContactForm />
     </div>
   );
 };
