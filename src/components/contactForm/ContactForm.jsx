@@ -1,18 +1,29 @@
 import React, { useState } from "react";
 import "./contactForm.scss";
+import axios from "axios";
 
 const ContactForm = () => {
   const [data, setData] = useState({
-    Name: "",
-    Phone: "",
-    Service: "",
+    name: "",
+    phone_number: "",
+    service: "",
   });
   const handleChange = (e) => {
     setData({ ...data, [e.target.name]: e.target.value });
   };
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(data);
+    const username = "root";
+    const password = "ANAz_AQNGy@WpRr!";
+
+     await axios.post("https://api.devmasters.uz/api/v1/bots/bot/send-message/", data, {
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: "Basic " + window.btoa(username + ":" + password),
+        //   Authorization: `Basic ${username}:${password}`,
+      },
+    });
+   
   };
   return (
     <div className="container" id="footer">
@@ -24,8 +35,8 @@ const ContactForm = () => {
             <input
               type="text"
               id="name"
-              name="Name"
-              value={data.Name}
+              name="name"
+              value={data.name}
               onChange={handleChange}
               placeholder="Ismingizni kiriting"
             />
@@ -34,16 +45,16 @@ const ContactForm = () => {
             <label htmlFor="name">Telefon raqam</label>
             <input
               type="number"
-              value={data.Phone}
+              value={data.phone_number}
               onChange={handleChange}
               id="phone"
-              name="Phone"
+              name="phone_number"
               placeholder="Telefon raqamingizni kiriting"
             />
           </div>
           <div>
             <label htmlFor="service">Hizmat turini tanlang</label>
-            <select name="Service" value={data.Service} id="service" onChange={handleChange}>
+            <select name="service" value={data.service} id="service" onChange={handleChange}>
               <option value="eCommerce">E-commerce</option>
               <option value="landingPage">Landing Page</option>
               <option value="crm">Crm Systems</option>
