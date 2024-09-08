@@ -6,7 +6,7 @@ const ContactForm = () => {
   const [data, setData] = useState({
     name: "",
     phone_number: "",
-    service: "",
+    service: "e-commerce",
   });
   const handleChange = (e) => {
     setData({ ...data, [e.target.name]: e.target.value });
@@ -16,14 +16,13 @@ const ContactForm = () => {
     const username = "root";
     const password = "ANAz_AQNGy@WpRr!";
 
-     await axios.post("https://api.devmasters.uz/api/v1/bots/bot/send-message/", data, {
+    await axios.post("https://api.devmasters.uz/api/v1/bots/bot/send-message/", data, {
       headers: {
         "Content-Type": "application/json",
         Authorization: "Basic " + window.btoa(username + ":" + password),
         //   Authorization: `Basic ${username}:${password}`,
       },
     });
-   
   };
   return (
     <div className="container" id="footer">

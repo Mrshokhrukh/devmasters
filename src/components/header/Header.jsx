@@ -14,9 +14,7 @@ const Header = () => {
   const [isOpenLang, setIsOpenLang] = useState(false);
   const [topClass, setTopClass] = useState("top_head");
   const [scrollY, setScrollY] = useState(0);
-  const [selectedLang, setLang] = useState(
-    JSON.parse(localStorage.getItem("lang")) || langs[0]
-  );
+  const [selectedLang, setLang] = useState(JSON.parse(localStorage.getItem("lang")) || langs[0]);
   const openSelector = () => {
     setIsOpenLang(!isOpenLang);
   };
@@ -68,6 +66,7 @@ const Header = () => {
       <div className="header container">
         <div className="logo" onClick={() => navigate("/")}>
           <img src={logo} alt="" />
+          <span>devmasters</span>
         </div>
         <div className="nav_links">
           <NavLink to="/" className="nav_link">
@@ -91,23 +90,14 @@ const Header = () => {
             <div className="lang_title">{selectedLang.short}</div>
             <ion-icon name="chevron-down-outline"></ion-icon>
             <div className="select_icon"></div>
-            <div
-              className={
-                isOpenLang
-                  ? `openLangSelector_box open`
-                  : `openLangSelector_box`
-              }
-            >
+            <div className={isOpenLang ? `openLangSelector_box open` : `openLangSelector_box`}>
               <ul className="select_language">
                 {langs
                   .sort((a, b) => b.id - a.id)
                   .map((opt, i) => {
                     return (
                       <div key={i}>
-                        <li
-                          className={opt.isSelected ? `selectedOpt` : ""}
-                          onClick={() => changeLanguage(opt.short)}
-                        >
+                        <li className={opt.isSelected ? `selectedOpt` : ""} onClick={() => changeLanguage(opt.short)}>
                           <img src={opt.url} alt="" width={20} /> {opt.lang}
                         </li>
                       </div>
@@ -123,17 +113,11 @@ const Header = () => {
 
         <div className="burgerMenu">
           {isOpen ? (
-            <button
-              onClick={() => dispatch(closeSide())}
-              className="sidebarIconAction closer"
-            >
+            <button onClick={() => dispatch(closeSide())} className="sidebarIconAction closer">
               <LuPanelRightClose />
             </button>
           ) : (
-            <button
-              onClick={() => dispatch(openSide())}
-              className="sidebarIconAction opener"
-            >
+            <button onClick={() => dispatch(openSide())} className="sidebarIconAction opener">
               <BsFillMenuButtonFill />
             </button>
           )}
