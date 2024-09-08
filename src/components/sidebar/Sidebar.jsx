@@ -9,6 +9,7 @@ import { IoCall } from "react-icons/io5";
 import { IoIosPricetags } from "react-icons/io";
 import { RiTeamFill } from "react-icons/ri";
 import { closeSide } from "../../redux/sidebarSlice";
+
 const Sidebar = () => {
   let navigate = useNavigate();
   let dispatch = useDispatch();
